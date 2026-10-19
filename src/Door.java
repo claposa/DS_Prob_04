@@ -4,16 +4,23 @@ public class Door {
   private int numTrials = 0;
   private boolean locked = false;
   public void resetState() {
-    numTrials = 0; locked = false; }
+    numTrials = 0;
+    locked = false;
+  }
   public void incrementNumTrials() { numTrials++; }
   public int getNumTrials() { return numTrials; }
   public boolean isLocked() { return locked; }
   public void lock() { locked = true; }
   public Door(String ident, CodeHandler ch) {
-    id = ident; codeHandler = ch;
+    id = ident;
+    codeHandler = ch;
   }
   public void processCode(String code) { codeHandler.handleCode(code, this); }
   public void open() { System.out.println("door " + id + " opened"); }
   public String getId() { return id; }
   public void setCodeHandler(CodeHandler ch) { codeHandler = ch; }
+  public void fireAlarm() {
+    System.out.println("door " + id + " fire alarm triggered!");
+  }
+  public void unlock() { locked = false; }
 }
