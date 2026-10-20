@@ -12,6 +12,7 @@ public class Open extends CodeHandler {
         door.resetState();
         door.open();
       } else {
+        door.incrementNumTrials();
         super.handleCode(code, door);
       }
     } else {

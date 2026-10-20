@@ -1,0 +1,34 @@
+=== PROVES AMB CHAIN 1 ===
+handle Open
+door d1 opened
+door d1 entered code 1111, trials left 3, at 2026-10-20T12:31:28.650814700
+door d1 fire alarm triggered!
+door d1 opened
+door d1 entered code 2222, trials left 3, at 2026-10-20T12:31:28.687361400
+handle Open
+reached end of chain
+door d1 entered code 1234, trials left 2, at 2026-10-20T12:31:28.688363400
+handle Open
+reached end of chain
+door d1 entered code 4321, trials left 1, at 2026-10-20T12:31:28.688363400
+handle Open
+door d1 is locked, entered code 5555, trials left 0, at 2026-10-20T12:31:28.688363400
+door d1 is locked, entered code 6666, trials left 0, at 2026-10-20T12:31:28.688363400
+door d1 entered code 3333, trials left 3, at 2026-10-20T12:31:28.688363400
+door d1 fire alarm triggered!
+door d1 opened
+door d1 entered code 2222, trials left 3, at 2026-10-20T12:31:28.688363400
+
+=== CANVI DE COMPORTAMENT EN TEMPS D'EXECUCIÓ (CHAIN 2) ===
+handle Open
+reached end of chain
+door d1 entered code 9999, trials left 2, at 2026-10-20T12:31:28.689359200
+handle Open
+door d1 opened
+door d1 entered code 1111, trials left 3, at 2026-10-20T12:31:28.689359200
+
+=== PROVES AMB CHAIN 3 (Només FireAlarm + Open) ===
+door d3 fire alarm triggered!
+door d3 opened
+handle Open
+door d3 opened
